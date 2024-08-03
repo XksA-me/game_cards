@@ -1,0 +1,24 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>上传卡片</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css') }}">
+</head>
+<body>
+    <div class="container">
+        <h1>上传卡片</h1>
+        <form method="post" enctype="multipart/form-data">
+            <label for="file">上传手写卡片图片:</label>
+            <input type="file" name="file" id="file" onchange="this.form.submit()">
+            <br><br>
+            <label for="content">或手动输入卡片文字 (每行一个):</label>
+            <textarea name="content" id="content" rows="10" cols="30">{{ text if text else '' }}</textarea>
+            <br><br>
+            <button type="submit">提交</button>
+        </form>
+        <a href="{{ url_for('index') }}">返回首页</a>
+    </div>
+</body>
+</html>

@@ -1,0 +1,16 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>导出词条</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css') }}">
+</head>
+<body>
+    <div class="container">
+        <h1>导出词条</h1>
+        <a href="{{ url_for('export') }}">下载词条文件</a>
+        <a href="{{ url_for('index') }}">返回首页</a>
+    </div>
+</body>
+</html>

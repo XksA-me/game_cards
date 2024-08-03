@@ -1,0 +1,19 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>游戏卡片词条收集系统</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css') }}">
+</head>
+<body>
+    <div class="container">
+        <h1>游戏卡片词条收集系统</h1>
+        <div class="links">
+            <a href="{{ url_for('upload') }}">上传卡片</a>
+            <a href="{{ url_for('export') }}">导出所有词条</a>
+            <a href="{{ url_for('display') }}">显示所有词条</a>
+        </div>
+    </div>
+</body>
+</html>
